@@ -1,0 +1,39 @@
+mat-toolbar {
+  display: flex;
+  color: white;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  background-color: #020617;
+  white-space: nowrap;
+  justify-content: space-evenly;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.burger-name {
+  display: flex;
+  column-gap: 1rem;
+  margin: 0rem 1rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .mat-toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: .5rem 0rem;
+  }
+  .controls-container {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+  }
+}

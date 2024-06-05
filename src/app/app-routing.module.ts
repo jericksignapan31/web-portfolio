@@ -4,14 +4,9 @@ import { PagesComponent } from './pages/pages.component';
 
 const routes: Routes = [
    {
-    path: 'pages',
-    component: PagesComponent,
-    title: 'Pages'
-  },
-  {
     path: '',
-    redirectTo: '/pages',
-    pathMatch: 'full'
+    loadChildren: () =>
+      import('./pages/page.module').then((m) => m.PageModule),
   },
 ];
 

@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span><b style="color:#18a3e9 ;"> < RIC</b> ANGULAR > </span>
+    <span class="example-spacer"></span>
+
+    <div *ngFor="let control of controls" class="controls-container">
+      <span class="burger-name">{{control.name}}</span>
+    </div>
+
+    <button mat-icon-button class="example-icon menu-icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

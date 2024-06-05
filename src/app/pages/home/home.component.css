@@ -1,0 +1,64 @@
+mat-card {
+  color: white;
+  display: grid;
+  grid-template-columns: .1fr 1fr 1fr;
+  min-height: 85vh;
+}
+
+.image {
+  margin: auto;
+
+}
+
+img{
+  width: 600px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 5rem;
+}
+
+.learn-more {
+  border: 3px solid white;
+  width: 30%;
+  min-height: 7vh;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+ margin-top: 1rem;
+  &:hover {
+    background-color: #0284c7;
+  }
+}
+
+.name {
+  color: #18a3e9;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+   line-height: 3.5rem;
+}
+
+.skill{
+          font-size: 1.875rem;
+        line-height: 3rem;
+}
+.des{
+  --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+    text-align: justify;
+  text-justify: inter-word;
+   line-height: 2rem;
+  
+
+}
