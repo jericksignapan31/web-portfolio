@@ -1,0 +1,48 @@
+mat-card {
+    background: #0F98D6;
+    padding: .3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s;
+}
+
+.text-content {
+    transition: opacity 0.3s;
+    margin-bottom: 1.1rem;
+}
+
+.icon-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+   
+   
+}
+
+.icon-content i {
+  color: white;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.file-icon{
+ width: 300px;
+ font-size: 35px;
+ margin-top: 1.2rem;
+}
+
+mat-card:hover .text-content {
+    opacity: 0;
+}
+
+mat-card:hover .icon-content {
+    opacity: 1;
+}
