@@ -49,3 +49,9 @@
 .icon-3 {
   background-color: #cf0894;
 }
+
+@media screen and (max-width: 768px) {
+  .social-media-icons {
+    display: none; 
+  }
+}
