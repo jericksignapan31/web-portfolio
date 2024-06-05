@@ -1,9 +1,9 @@
 mat-toolbar {
   display: flex;
   color: white;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   font-size: 1.5rem;
-  background-color: #020617;
+  background: #020617;
   white-space: nowrap;
   justify-content: space-evenly;
 }

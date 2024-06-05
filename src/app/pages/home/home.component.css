@@ -3,6 +3,8 @@ mat-card {
   display: grid;
   grid-template-columns: .1fr 1fr 1fr;
   min-height: 85vh;
+ background: #0F172A;
+
 }
 
 .image {
