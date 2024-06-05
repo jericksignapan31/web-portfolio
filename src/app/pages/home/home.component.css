@@ -2,7 +2,7 @@ mat-card {
   color: white;
   display: grid;
   grid-template-columns: .1fr 1fr 1fr;
-  min-height: 85vh;
+  min-height: 88vh;
  background: #0F172A;
 
 }
@@ -35,8 +35,10 @@ img{
   align-content: center;
   justify-content: space-around;
  margin-top: 1rem;
+
   &:hover {
     background-color: #0284c7;
+    cursor: pointer;
   }
 }
 
@@ -45,7 +47,7 @@ img{
   font-size: 2rem;
 }
 
-h1 {
+.f-name {
   font-size: 4rem;
   font-weight: 700;
    line-height: 3.5rem;
