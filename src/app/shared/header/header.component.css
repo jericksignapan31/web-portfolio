@@ -1,11 +1,26 @@
 .mat-toolbar {
   display: flex;
   color: white;
-  padding: 0.5rem 3rem;
+  padding: 00.5rem 3rem;
   font-size: 1.5rem;
   background: #020617;
   white-space: nowrap;
   justify-content: space-evenly;
+}
+
+@keyframes slideInText {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mat-toolbar span {
+  animation: slideInText 0.5s ease forwards;
 }
 
 @keyframes slideInText {
@@ -49,6 +64,24 @@
     opacity: 1;
     transform: translateY(0);
   }
+  cursor: pointer;
+  opacity: 0; /* Itago muna ang mga burger name */
+  transition: opacity 0.5s ease; /* I-set ang transition effect */
+}
+
+.burger-name.show {
+  opacity: 1; /* Kapag ipinakita na, gawing visible */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .menu-icon {
@@ -63,8 +96,7 @@
     padding: 0.5rem 0rem;
   }
   .controls-container {
-    opacity: 0;
-     display: none;
+    display: none;
   }
   .menu-icon {
     display: flex;
