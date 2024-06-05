@@ -6,6 +6,9 @@
   background: #020617;
   white-space: nowrap;
   justify-content: space-evenly;
+  position: fixed;
+  top: 0rem;
+   z-index: 1000;
 }
 
 @keyframes slideInText {
@@ -68,7 +71,7 @@
 }
 
 .burger-name.show {
-  opacity: 1; /* Kapag ipinakita na, gawing visible */
+  opacity: 1;
 }
 
 @keyframes slideIn {

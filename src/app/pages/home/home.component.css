@@ -2,8 +2,9 @@ mat-card {
   color: white;
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr;
-  min-height: 88vh;
+  min-height: 100vh;
   background: #0F172A;
+  border: none;
 }
 
 .image {
@@ -54,6 +55,7 @@ img{
   align-items: flex-start;
   padding-right: 5rem;
   animation: slideInDescription 1s ease forwards; 
+  
 }
 
 .learn-more {
