@@ -8,10 +8,43 @@ mat-card {
 
 .image {
   margin: auto;
+  opacity: 0; 
+  transition: transform 1s ease, opacity 10s ease;
 }
 
-img {
+img{
   width: 500px;
+}
+
+.image.loaded {
+  opacity: 1; 
+}
+
+@keyframes slideInImage {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image {
+  margin: auto;
+  animation: slideInImage 1s forwards; 
+}
+
+@keyframes slideInDescription {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .description {
@@ -20,6 +53,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   padding-right: 5rem;
+  animation: slideInDescription 1s ease forwards; 
 }
 
 .learn-more {
@@ -88,6 +122,7 @@ img {
   mat-card {
     grid-template-columns: 1fr;
     padding: 1rem;
+     min-height: 60vh;
   }
   .image {
     display: none;
