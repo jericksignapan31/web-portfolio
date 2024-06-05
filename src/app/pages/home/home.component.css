@@ -1,19 +1,17 @@
 mat-card {
   color: white;
   display: grid;
-  grid-template-columns: .1fr 1fr 1fr;
+  grid-template-columns: 0.1fr 1fr 1fr;
   min-height: 88vh;
- background: #0F172A;
-
+  background: #0F172A;
 }
 
 .image {
   margin: auto;
-
 }
 
-img{
-  width: 600px;
+img {
+  width: 500px;
 }
 
 .description {
@@ -34,12 +32,12 @@ img{
   align-items: center;
   align-content: center;
   justify-content: space-around;
- margin-top: 1rem;
+  margin-top: 1rem;
+}
 
-  &:hover {
-    background-color: #0284c7;
-    cursor: pointer;
-  }
+.learn-more:hover {
+  background-color: #0284c7;
+  cursor: pointer;
 }
 
 .name {
@@ -50,19 +48,47 @@ img{
 .f-name {
   font-size: 4rem;
   font-weight: 700;
-   line-height: 3.5rem;
+  line-height: 3.5rem;
 }
 
-.skill{
-          font-size: 1.875rem;
-        line-height: 3rem;
+.skill {
+  font-size: 1.875rem;
+  line-height: 3rem;
 }
-.des{
+
+.des {
   --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-    text-align: justify;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+  text-align: justify;
   text-justify: inter-word;
-   line-height: 2rem;
-  
+  line-height: 2rem;
+}
 
+
+@media (max-width: 768px) {
+  mat-card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .image {
+    display: none;
+  }
+  .description {
+    padding: 1rem;
+  }
+  .learn-more {
+    width: 50%;
+  }
+  .f-name {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .skill {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .des {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }

@@ -8,7 +8,7 @@ import { MaterialModule } from '../material-module';
 
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent],
+  declarations: [PagesComponent, HomeComponent,],
   imports: [
     CommonModule,
     PageRoutingModule,
