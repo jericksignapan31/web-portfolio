@@ -7,11 +7,12 @@ import { MaterialModule } from '../material-module';
 import { AboutComponent } from './about/about.component';
 import { CAComponent } from './ca/ca.component';
 import { SkillComponent } from './skill/skill.component';
+import { ProjectComponent } from './project/project.component';
 
 
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, AboutComponent, CAComponent, SkillComponent,],
+  declarations: [PagesComponent, HomeComponent, AboutComponent, CAComponent, SkillComponent, ProjectComponent,],
   imports: [
     CommonModule,
     PageRoutingModule,

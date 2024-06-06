@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit{
     }, 200); 
   }
 
-  controls: ILabelname[] = [{name:'HOME'},{name:'ABOUT'},{name:'SKILL'},{name:'WORK'},{name:'CONTACT'}]
+  controls: ILabelname[] = [{name:'HOME'},{name:'ABOUT'},{name:'SKILL'},{name:'PROJECT'},{name:'CONTACT'}]
 
   
 }
