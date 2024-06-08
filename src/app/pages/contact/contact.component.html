@@ -1,0 +1,24 @@
+<body>
+    <div class="contact-container">
+  <h2 class="title">Contact</h2>
+  <p>// Submit the form below or shoot me an email - <a href="mailto:jericksignapan3331@gmail.com">jericksignapan3331@gmail.com</a></p>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Name" ngModel required>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="Email" ngModel required>
+    </div>
+    <div class="form-group">
+      <textarea id="message" name="message" placeholder="Message" ngModel required></textarea>
+    </div>
+    <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">Let's Connect <span>&#x2709;</span></button>
+  </form>
+
+  <div class="footer">
+    <p>Design & Built by Jerick Signapan</p>
+    <p>Angular & TailwindCSS</p>
+  </div>
+</div>
+</body>
+

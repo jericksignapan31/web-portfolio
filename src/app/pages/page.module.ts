@@ -8,15 +8,18 @@ import { AboutComponent } from './about/about.component';
 import { CAComponent } from './ca/ca.component';
 import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [PagesComponent, HomeComponent, AboutComponent, CAComponent, SkillComponent, ProjectComponent,],
+  declarations: [PagesComponent, HomeComponent, AboutComponent, CAComponent, SkillComponent, ProjectComponent, ContactComponent,],
   imports: [
     CommonModule,
     PageRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ]
 })
 export class PageModule { }
