@@ -26,14 +26,14 @@ export class ProjectComponent {
       title: 'STUDEV',
       description: 'API that sends a lot of beautiful, cute, and hot girl TikTok videos.',
       technologies: ['Angular', 'TypeScript', 'CSS'],
-      link: 'https://shoti-api.deno.dev'
+      link: ''
     },
     {
       image: 'https://firebasestorage.googleapis.com/v0/b/mobi-pms.appspot.com/o/tools%2FBlue%20Torn%20Paper%20Giveaway%20Announcement%20Instagram%20Post.jpg?alt=media&token=1c22d84b-788a-4d5b-850a-2e9044e0de07',
       title: 'PRINT SAVER',
       description: 'API that sends a lot of beautiful, cute, and hot girl TikTok videos.',
       technologies: ['Angular', 'TypeScript', 'CSS'],
-      link: 'https://shoti-api.deno.dev'
+      link: ''
     },
     {
       image: 'https://firebasestorage.googleapis.com/v0/b/mobi-pms.appspot.com/o/tools%2Fport.jpg?alt=media&token=7f4f43a7-43a0-4fba-bd0c-ed506708631e',
@@ -47,7 +47,7 @@ export class ProjectComponent {
       title: 'STUDEV',
       description: 'API that sends a lot of beautiful, cute, and hot girl TikTok videos.',
       technologies: ['Angular', 'TypeScript', 'CSS'],
-      link: 'https://shoti-api.deno.dev'
+      link: ''
     }
   ];
 }

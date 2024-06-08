@@ -125,6 +125,7 @@ img{
     grid-template-columns: 1fr;
     padding: 1rem;
      min-height: 60vh;
+     margin-top: 2rem;
   }
   .image {
     display: none;

@@ -87,11 +87,10 @@ body {
 
 .date-right {
     font-size: 1rem;
-color: white;
+    color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-   
     font-style: italic;
     margin-left: 5rem;
     width: 55%;
@@ -102,10 +101,9 @@ color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-   color: white;
-
+    color: white;
     font-style: italic;
-     left: -20rem;
+    left: -20rem;
     width: 50%;
 }
 
@@ -117,14 +115,6 @@ color: white;
 .experience-item.right {
     left: 50%;
     text-align: left;
-}
-
-.experience-item.left .date {
-    right: -150px;
-}
-
-.experience-item.right .date {
-    left: -150px;
 }
 
 .experience-item.left::before {
@@ -149,4 +139,77 @@ color: white;
     top: 50%;
     left: -20px;
     transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    .title {
+        font-size: 28px;
+        width: auto;
+    }
+
+    .experience-item {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .experience-item.left, .experience-item.right {
+        left: 0;
+        text-align: center;
+    }
+
+    .experience-item.left .date-left, .experience-item.right .date-right {
+        position: static;
+        transform: none;
+        margin: 10px 0 0 0;
+        width: auto;
+        text-align: center;
+    }
+
+    .timeline-line {
+        left: 0;
+        width: 2px;
+        height: 100%;
+        margin: auto;
+        right: 0;
+        top: 0;
+    }
+
+    .experience-item.left::before, .experience-item.right::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline-line{
+        height: 90%;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .role {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .date-right, .date-left {
+        display: none;
+    }
 }
